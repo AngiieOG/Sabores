@@ -1,0 +1,103 @@
+/*RESET CSS*/
+:root{
+    --main-font: sans-serif;
+    --font-size:16px;
+    --main-color: #f7df1e;
+    --second-color: #222;
+    --main-modal-color:rgba(247,222,30,0.85);
+    --second-modal-color:rgba(34,34,34,0.85);
+    --container-width: 1200px;
+}
+html{
+    box-sizing: border-box;
+    font-family: var(--main-font);
+    font-size: var(--font-size);
+    /*scroll-behavior: smooth; */
+}
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+body{
+    margin: 0; /*Para resetear el margen que crea en el body por defecto*/
+    overflow-x: hidden; /*Para que se oculte lo que seldesborde en horizontal y no se genere la barra de desplazamiento*/
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Redressed', cursive;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/*Para que las imagenes se adapten a la máxima anchura de su contenedor*/
+img{
+    max-width: 100%;
+    height: auto;
+}
+header{
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: antiquewhite;
+    
+    /*background-color: var(--main-color);*/
+    color: var(--second-color);
+
+}
+@media screen and (min-width: 1024px){
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+p{
+    font-family: 'Indie Flower', cursive;
+}
+main{
+    flex-grow: 1;
+}
+.logo img{
+    width: 13rem;
+    height: auto;
+}
+.menu ul{
+    display: flex;
+    list-style-type: none;
+    font-size: 115%;
+    margin: 0px;
+    padding: 0px;
+    /*font-size: 30px; */
+}
+.menu li{
+    padding: 0.5rem;
+}
+.menu a {
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+.menu a:visited, .menu a:link{
+    color: cadetblue;
+}
+.seccion{
+    text-align: center;
+}
+#seccion-1{
+    /*background-image: url("./assets/productos/tresLeches.jpg"); */
+}
+footer{
+    text-align: center;
+
+}
+.footer{
+    background-color: antiquewhite;
+}
+
+
+/*
+
+corregir el tamaño de la letra responsive 
+direccionamiento de los enlaces a las secciones
+
+*/
